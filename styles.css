@@ -68,3 +68,56 @@
   flex-direction: column !important;
   gap: 10px !important;
 }
+/* AJUSTES CHAT */
+.chat-log {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 520px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.message {
+  display: block;
+  width: fit-content;
+  max-width: 85%;
+  padding: 16px 18px;
+  border-radius: 18px;
+  line-height: 1.6;
+  font-size: 1rem;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.message.assistant {
+  align-self: flex-start;
+}
+
+.message.user {
+  align-self: flex-end;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message.assistant h4 {
+  margin: 0 0 10px 0;
+}
+
+.message.assistant ul {
+  margin: 10px 0 0 18px;
+  padding: 0;
+}
+
+.message.assistant li {
+  margin-bottom: 6px;
+}
+
+#user-input {
+  width: 100%;
+  resize: vertical;
+}
