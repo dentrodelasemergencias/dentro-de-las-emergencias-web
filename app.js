@@ -35,8 +35,7 @@ async function sendMessage(message) {
   sendBtn.textContent = "Enviando...";
 
   try {
-    const response = await fetch("/api/chat", {
-      method: "POST",
+const response = await fetch("https://ddle-gemini-chat.dentrodelasemergencias.workers.dev/", {      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
