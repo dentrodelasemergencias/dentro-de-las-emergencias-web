@@ -1,5 +1,5 @@
-/* FIX DEFINITIVO CHAT */
-#chat-messages {
+/* CHAT FINAL */
+#chat {
   display: flex !important;
   flex-direction: column !important;
   gap: 14px !important;
@@ -7,7 +7,6 @@
   overflow-y: auto !important;
   overflow-x: hidden !important;
   padding: 20px !important;
-  background: #f2f4f7 !important;
 }
 
 .message {
@@ -28,14 +27,14 @@
   font-size: 1rem !important;
 }
 
-.message.bot,
+.message.assistant,
 .message.user {
   height: auto !important;
   max-height: none !important;
   overflow: visible !important;
 }
 
-.message.bot {
+.message.assistant {
   align-self: flex-start !important;
   background: #ffffff !important;
   color: #1f2937 !important;
@@ -50,74 +49,30 @@
   border-bottom-right-radius: 6px !important;
 }
 
-.message.bot h4,
-.message.bot ul,
-.message.bot li,
-.message.bot strong,
-.message.bot br {
-  overflow: visible !important;
-}
-
-.chat-shell {
-  overflow: hidden !important;
-}
-
-#chat-form,
-.chat-form {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 10px !important;
-}
-/* AJUSTES CHAT */
-.chat-log {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  max-height: 520px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 20px;
-}
-
-.message {
-  display: block;
-  width: fit-content;
-  max-width: 85%;
-  padding: 16px 18px;
-  border-radius: 18px;
-  line-height: 1.6;
-  font-size: 1rem;
-  white-space: normal;
-  word-break: break-word;
-  overflow-wrap: anywhere;
-}
-
-.message.assistant {
-  align-self: flex-start;
-}
-
-.message.user {
-  align-self: flex-end;
-}
-
 .message p {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .message.assistant h4 {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px 0 !important;
+  color: #0042c4 !important;
+  font-size: 1rem !important;
 }
 
 .message.assistant ul {
-  margin: 10px 0 0 18px;
-  padding: 0;
+  margin: 10px 0 0 18px !important;
+  padding: 0 !important;
 }
 
 .message.assistant li {
-  margin-bottom: 6px;
+  margin-bottom: 6px !important;
+}
+
+.message.assistant strong {
+  color: #0042c4 !important;
 }
 
 #user-input {
-  width: 100%;
-  resize: vertical;
+  width: 100% !important;
+  resize: vertical !important;
 }
